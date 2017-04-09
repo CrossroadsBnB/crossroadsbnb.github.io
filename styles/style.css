@@ -146,12 +146,13 @@ body {
   left: 0; }
 
 .btn-default {
-    background-color: #cbe6a3;
+    background-color: #36454f;
     border: none;
+    margin-bottom: 25px;
   }
 
 .arrow {
-  background-color: #a3cbe6;
+  background-color: #36454f;
   height: 20%;
   font-family: Brown, Montserrat;
 }
@@ -264,12 +265,12 @@ body {
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-  background-color: #a3cbe6;
+  background-color: inherit;
 }
 
 
 .navbar-default {
-  background-color: #a3cbe6;
+  background-color: #36454f;
 }
 
 #carousel-text {
@@ -300,12 +301,14 @@ body {
   margin-top: 45px;
   display: inline-block;
   float: left;
+  width: 50%;
 }
 
 .service-right i {
   margin-top: 45px;
   display: inline-block;
   float: right;
+  width: 50%;
 }
 
 #cards {
@@ -315,7 +318,13 @@ body {
   border-radius: 10px;
   /*margin: 10px;*/
   align-items: center;
+  /*width: 30%;*/
 }
+/*
+#cards-container {
+  display: inline-block;
+}*/
+
 
 #services hr {
   border-color: #162129;
