@@ -5,38 +5,20 @@
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
   background: rgba(0, 207, 161, 0.75);
-  /*background: rgba(22, 33, 41, 0.9);*/
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   opacity: 0;
+  margin: 0 auto;
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-
-#services .portfolio-item .portfolio-link .caption {
-  background-color: white;
-  box-shadow: 10px 10px 5px #888888;
-  border-radius: 10px;
-  color: black;
-  opacity: 1;
-}
-
-/*#services .portfolio-item img {
-  width: 250px;
-}
-
-#services .portfolio-item .portfolio-link .caption {
-  width: 250px;
-  margin: auto;
-}*/
-
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
@@ -50,21 +32,6 @@
   top: 50%;
   margin-top: -12px;
   color: white;
-}
-
-#services .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: black;
-}
-
-#services .portfolio-item .portfolio-link .caption .caption-content {
-  top: 35%;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {

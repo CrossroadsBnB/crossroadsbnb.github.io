@@ -492,3 +492,7 @@ body {
   color: black;
   font-size: 14px;
 }
+
+#nearby-images img {
+  margin: 0 auto;
+}
