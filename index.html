@@ -2,125 +2,112 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Crossroads BnB</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Bootstrap Core CSS -->
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="styles/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="styles/form.css" rel="stylesheet" >
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/portfolio.css" rel="stylesheet">
-    <link href="styles/scrolling-nav.css" rel="stylesheet">
-    <link href="styles/slider.css" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Crossroads BnB</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/stylish-portfolio.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="styles/form.css" rel="stylesheet" >
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/portfolio.css" rel="stylesheet">
+  <link href="styles/scrolling-nav.css" rel="stylesheet">
+  <link href="styles/slider.css" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header page-scroll">
+            <div>
+                <h3 style="color:white">Crossroads BnB</h3>
+                <!-- <img src="img/logo.png"/> -->
+            </div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-              <div>
-                  <h3 style="color:white">Crossroads BnB</h3>
-                  <!-- <img src="img/logo.png"/> -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right">
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#services">Why choose us?</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#together">Nearby</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#partners">Testimonials</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#clients">How to Book</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+                  <li style="background-color:#bea3e6; color:white; border-radius:3px;">
+                      <a target="_blank" alt="Booking link" href="https://www.booking.com/hotel/gb/crossroads-bed-and-breakfast.html">Book now</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Half Page Image Background Carousel Header -->
+  <header id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <a href="#about"><div class="fill" style="background-image:url('img/carousel/sign-post.png');"></div></a>
+              <div class="carousel-caption">
+                  <h2 id="carousel-text">Get away from the city</h2>
               </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+          </div>
+          <div class="item">
+              <!-- Set the second background image using inline CSS below. -->
+              <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/front.png');"></div></a>
+              <div class="carousel-caption">
+                  <h2 id="carousel-text">A hidden gem in the beautiful village of Moretonhampstead</h2>
+              </div>
+          </div>
+          <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/bed.png');"></div></a>
+              <div class="carousel-caption">
+                  <h2 id="carousel-text">Relax and unwind with a comfy bed and a chef-cooked breakfast</h2>
+              </div>
+          </div>
+      </div>
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Why choose us?</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#together">Nearby</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#partners">Testimonials</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#clients">How to Book</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li style="background-color:#bea3e6; color:white; border-radius:3px;">
-                        <a target="_blank" alt="Booking link" href="https://www.booking.com/hotel/gb/crossroads-bed-and-breakfast.html">Book now</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+      </a>
 
-    <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <a href="#about"><div class="fill" style="background-image:url('img/carousel/sign-post.png');"></div></a>
-                <div class="carousel-caption">
-                    <h2 id="carousel-text">Get away from the city</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/front.png');"></div></a>
-                <div class="carousel-caption">
-                    <h2 id="carousel-text">A hidden gem in the beautiful village of Moretonhampstead</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/bed.png');"></div></a>
-                <div class="carousel-caption">
-                    <h2 id="carousel-text">Relax and unwind with a comfy bed and a chef-cooked breakfast</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
+  </header>
   <section class="arrow">
     <div align="center">
       <div class="col-md-12">
@@ -140,152 +127,149 @@
       </div>
     </div>
   </section>
-    <!-- Header -->
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center"><br>
-                    <h2>A BnB situated in the heart of The Moor.</h2><br><br>
-                    <p class="lead">
-                      Crossroads BnB is close to the beautiful Dartmoor Moors,
-                      with fantastic views for miles. Moretonhampstead is a
-                      small village on the edge of the moor which is around
-                      10 mins drive away and a 1/2 hour walk. The village
-                      has a couple of pubs and eateries on offer,
-                      The White Hart is a lovely hotel with a bar,
-                      restaurant open to the public, meals are very reasonable
-                      and the bar has lovely bar meals too. Afternoon teas
-                      can be taken here in the lounge or Garden. We have
-                      also The Horse, lovely surroundings inside, restaurant
-                      to the rear with a small enclosed garden, it offers
-                      fabulous food, pizzas and good selection of local beers.
-                      During the summer months we have the odd music and quiz
-                      night. The Old Union Inn is a pub with character, lovely
-                      food, fantastic selection of beer and a lovely outside
-                      space on a sunny day, very reasonably priced would
-                      recommend booking at weekends, the same with The Horse
-                      they get very busy. Roberto's Pizza restaurant, fabulous
-                      atmosphere and food, small but worth it! Roberto's does
-                      not have an alcohol licence so please take your own along,
-                      they will provide the glasses and soft drinks are
-                      available. Booking is always recommended as a lot of the
-                      locals use this one. We also have our Lovely Tea Rooms,
-                      only recently renovated and beautifully done too. well
-                      recommend this one for afternoon teas and light lunches.
-                      If your wanting a sit in the sun and a lovely cup of
-                      coffee and a good lunch then Central Stores Cafe is ideal,
-                      situated next to the Information centre and our lovely
-                      Brainwaves charity shop where you can always find a
-                      fantastic bargain.
-                    </p>
-                    <br>
-                    <a target="_blank" href="#portfolioModalTeam" data-toggle="modal" class="btn btn-default btn-lg">
-                      <span style="font-size:1em; color:white" class="network-name">Meet Dawn</span>
-                    </a>
-
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-
-    <section id="portfolio" class="services">
-        <div id="services" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center"><br><br>
-                    <h2>Why choose us?</h2>
-                    <!-- <hr class="star-primary"> -->
-                    <hr class="small">
-
-                </div>
-            </div><br>
-            <div style="text-align: center">
-              <p class="lead">Here are a few reasons why you should come and stay with us:</p>
-            </div>
-            <div id="cards-container">
-              <div class="row">
-
-                <div class="col-md-5" id="cards">
-                  <a href="#portfolioModal" data-toggle="modal">
-                    <div class="service-left">
-                      <div>
-                        <i id="socialmedia" style="color:#36454f" class="fa fa-cutlery fa-fw fa-5x"></i>
-                      </div>
-                      <div class="service-text">
-                        <h3>Quality Food</h3>
-                        <p>Wake up to an amazing breakfast from Dawn, who trained as a chef before starting Crossroads BnB.</p>
-                        <!-- <span style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</span> -->
-                      </div>
-                    </div>
+  <section id="about" class="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center"><br>
+                  <h2>A BnB situated in the heart of The Moor.</h2><br><br>
+                  <p class="lead">
+                    Crossroads BnB is close to the beautiful Dartmoor Moors,
+                    with fantastic views for miles. Moretonhampstead is a
+                    small village on the edge of the moor which is around
+                    10 mins drive away and a 1/2 hour walk. The village
+                    has a couple of pubs and eateries on offer,
+                    The White Hart is a lovely hotel with a bar,
+                    restaurant open to the public, meals are very reasonable
+                    and the bar has lovely bar meals too. Afternoon teas
+                    can be taken here in the lounge or Garden. We have
+                    also The Horse, lovely surroundings inside, restaurant
+                    to the rear with a small enclosed garden, it offers
+                    fabulous food, pizzas and good selection of local beers.
+                    During the summer months we have the odd music and quiz
+                    night. The Old Union Inn is a pub with character, lovely
+                    food, fantastic selection of beer and a lovely outside
+                    space on a sunny day, very reasonably priced would
+                    recommend booking at weekends, the same with The Horse
+                    they get very busy. Roberto's Pizza restaurant, fabulous
+                    atmosphere and food, small but worth it! Roberto's does
+                    not have an alcohol licence so please take your own along,
+                    they will provide the glasses and soft drinks are
+                    available. Booking is always recommended as a lot of the
+                    locals use this one. We also have our Lovely Tea Rooms,
+                    only recently renovated and beautifully done too. well
+                    recommend this one for afternoon teas and light lunches.
+                    If your wanting a sit in the sun and a lovely cup of
+                    coffee and a good lunch then Central Stores Cafe is ideal,
+                    situated next to the Information centre and our lovely
+                    Brainwaves charity shop where you can always find a
+                    fantastic bargain.
+                  </p>
+                  <br>
+                  <a target="_blank" href="#portfolioModalTeam" data-toggle="modal" class="btn btn-default btn-lg">
+                    <span style="font-size:1em; color:white" class="network-name">Meet Dawn</span>
                   </a>
-                </div>
 
-                <div class="col-md-2">
-                </div>
+              </div>
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
 
-                <div class="col-md-5" id="cards">
-                  <a href="#portfolioModal" data-toggle="modal">
-                    <div class="service-right">
-                      <div>
-                        <i id="socialmedia" style="color:#a3cbe6" class="fa fa-volume-down fa-fw fa-5x"></i>
-                      </div>
-                      <div class="service-text">
-                        <h3>Peace & Quiet</h3>
-                        <p>Get out of the city and enjoy the serenity of the moor. Enjoy everything the moor has to offer.</p>
-                        <!-- <p style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</p> -->
-                      </div>
-                    </div>
-                  </a>
-                </div>
+  <section id="portfolio" class="services">
+      <div id="services" class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center"><br><br>
+                  <h2>Why choose us?</h2>
+                  <!-- <hr class="star-primary"> -->
+                  <hr class="small">
 
-            </div>
-
-            <br><br>
-
+              </div>
+          </div><br>
+          <div style="text-align: center">
+            <p class="lead">Here are a few reasons why you should come and stay with us:</p>
+          </div>
+          <div id="cards-container">
             <div class="row">
 
-              <div class="col-sm-5" id="cards">
+              <div class="col-md-5" id="cards">
                 <a href="#portfolioModal" data-toggle="modal">
                   <div class="service-left">
                     <div>
-                      <i id="socialmedia" style="color:#cbe6a3" class="fa fa-leaf fa-fw fa-5x"></i>
+                      <i id="socialmedia" style="color:#36454f" class="fa fa-cutlery fa-fw fa-5x"></i>
                     </div>
                     <div class="service-text">
-                      <h3>Location</h3>
-                      <p>We're situated right in the middle of the moor, which means you're surrounded by nature.</p>
+                      <h3>Quality Food</h3>
+                      <p>Wake up to an amazing breakfast from Dawn, who trained as a chef before starting Crossroads BnB.</p>
                       <!-- <span style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</span> -->
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div class="col-sm-2">
+              <div class="col-md-2">
               </div>
 
-              <div class="col-sm-5" id="cards">
+              <div class="col-md-5" id="cards">
                 <a href="#portfolioModal" data-toggle="modal">
                   <div class="service-right">
                     <div>
-                      <i id="socialmedia" style="color:#bea3e6" class="fa fa-bed fa-fw fa-5x"></i>
+                      <i id="socialmedia" style="color:#a3cbe6" class="fa fa-volume-down fa-fw fa-5x"></i>
                     </div>
                     <div class="service-text">
-                      <h3>Comfort</h3>
-                      <p>Tuck in to one of our comfy beds with brand-new mattresses - you won't be disappointed!</p>
+                      <h3>Peace & Quiet</h3>
+                      <p>Get out of the city and enjoy the serenity of the moor. Enjoy everything the moor has to offer.</p>
                       <!-- <p style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</p> -->
                     </div>
                   </div>
                 </a>
               </div>
 
-            </div>
           </div>
 
-        </div><br><br><br>
-    </section>
+          <br><br>
+
+          <div class="row">
+
+            <div class="col-sm-5" id="cards">
+              <a href="#portfolioModal" data-toggle="modal">
+                <div class="service-left">
+                  <div>
+                    <i id="socialmedia" style="color:#cbe6a3" class="fa fa-leaf fa-fw fa-5x"></i>
+                  </div>
+                  <div class="service-text">
+                    <h3>Location</h3>
+                    <p>We're situated right in the middle of the moor, which means you're surrounded by nature.</p>
+                    <!-- <span style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</span> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-2">
+            </div>
+
+            <div class="col-sm-5" id="cards">
+              <a href="#portfolioModal" data-toggle="modal">
+                <div class="service-right">
+                  <div>
+                    <i id="socialmedia" style="color:#bea3e6" class="fa fa-bed fa-fw fa-5x"></i>
+                  </div>
+                  <div class="service-text">
+                    <h3>Comfort</h3>
+                    <p>Tuck in to one of our comfy beds with brand-new mattresses - you won't be disappointed!</p>
+                    <!-- <p style="font-size:1em; color:white" class="btn btn-default btn-lg">Check it out</p> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div><br><br><br>
+  </section>
 
     <!-- Together -->
     <section>
